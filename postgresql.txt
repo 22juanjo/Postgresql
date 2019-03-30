@@ -48,4 +48,4 @@ INSERT INTO pasajeros (nombre, id_vuelos) VALUES ('Chimuelo', 5);
 INSERT INTO pasajeros (nombre, id_vuelos) VALUES ('Sara', 6);
 select * from pasajeros //Se llama la tabla para ver los datos que se ingresaron en los pasajeros.
 select origen, destino, nombre from vuelos join pasajeros on pasajeros.id_vuelos=vuelos.id; //Muestra una relacion de ambas tablas, para saber el origen y el destino del vuelo mas el nombre delpasajero en una sola tabla.
-select origen, destino, nombre from vuelos left join pasajeros on pasajeros.id_vuelos = vuelos.id;
+select origen, destino, nombre from vuelos left join pasajeros on pasajeros.id_vuelos = vuelos.id; //Muestra todos los registro de la tabla izquierda (la primera tabla que se menciona en la consulta) junto a todos los registros que coincida con la segunda tabla que se especifica en la sentencia.
